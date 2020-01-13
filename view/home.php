@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Test</title>
 	<?php view('head'); ?>
 </head>
-<body>
+<body class="h-100 bg-dark">
 	<div class="container-fluid">
-		<div class="row bg-dark">
-			<div class="col">Oui</div>
+		<div class="row">
+			<div class="col">
+				<div class="row">
+					<h1 class="col text-white text-center my-5">Lundi 01 2020</h1>
+				</div>
+				<div class="row">
+					<div class="col">
+						<ul class="list-group">
+							<li class="list-group-item">Test</li>
+							<li class="list-group-item">Test</li>
+							<li class="list-group-item">Test</li>
+							<li class="list-group-item">Test</li>
+							<li class="list-group-item">Test</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="col">
 				<div class="row justify-content-center">
 					<div class="col-8">
 						<div class="card card-body m-2">
-							<div class="row align-items-center">
+							<div class="row align-items-center" id="btn-new-page">
 								<div class="col-2">
 									<div class="btn btn-light"> + </div>
 								</div>
@@ -25,12 +41,44 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center">
+				<div class="row justify-content-center my-1">
+					<div class="col-8">
+						<form method="post" action="" class="form-group">
+							<div class="card">
+								<div class="card-header row">
+									<div class="col-8">
+										<input class="form-control" type="text" id="page_title" name="page_title" placeholder="Insert the title">
+									</div>
+									<div class="float-right col-4">
+										<select class="form-control" name="page_emotion" id="page_emotion">
+											<option> - - - </option>
+											<option>Test</option>
+											<option>Test</option>
+										</select>
+									</div>
+								</div>
+								<div class="card-body">
+									<div id="" >
+										<select class="form-control my-1">
+											<option>Text</option>
+											<option>Image</option>
+										</select>
+										<textarea class="form-control"></textarea>
+									</div>
+									<div class="btn btn-dark btn-large col my-1">Add Bloc</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row justify-content-center my-1">
 					<div class="col-8">
 						<div class="card">
 							<div class="card-header">
 								Title of the page
-								<small>Date 21/02/4561</small>
+								<small>21/02/4561</small>
+								<div class="float-right">Emotion</div>
 							</div>
 							<div class="card-body">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -49,9 +97,6 @@
 			</div>
 			<div class="col">Oui</div>
 		</div>
-
-		<footer class="footer mt-auto">Je suis le boss</footer>
-
 	</div>
 	<?php view('scripts'); ?>
 </body>
