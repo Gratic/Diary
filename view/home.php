@@ -41,7 +41,7 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center my-1">
+				<div class="row justify-content-center my-1 d-none" id="pageForm">
 					<div class="col-8">
 						<form method="post" action="" class="form-group">
 							<div class="card">
@@ -58,25 +58,36 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<div id="" >
-										<select class="form-control my-1">
-											<option>Text</option>
-											<option>Image</option>
-										</select>
-										<textarea class="form-control"></textarea>
+									<div id="blocks">
+										<div class="block my-2">
+											<div class="row align-items-center">
+												<div class="col-8">
+													<select class="form-control my-1" id="type">
+														<option>Text</option>
+														<option>Image</option>
+													</select>
+												</div>
+												<div class="col">
+													<div class="btn btn-danger btn-large col">Delete</div>
+												</div>	
+											</div>
+											<textarea class="form-control"></textarea>
+											<input type="file" class="form-control-file" name="">
+										</div>
 									</div>
-									<div class="btn btn-dark btn-large col my-1">Add Bloc</div>
+									<div class="btn btn-dark btn-large col my-1" id="add">Add Bloc</div>
+									<div class="btn btn-dark btn-large col my-1">Create</div>
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
 
-				<div class="row justify-content-center my-1">
-					<div class="col-8">
-						<div class="card">
+				<div class="row justify-content-center">
+					<div class="col-8" id="pages">
+						<div class="card my-1">
 							<div class="card-header">
-								Title of the page
+								<span>Title of the page</span>
 								<small>21/02/4561</small>
 								<div class="float-right">Emotion</div>
 							</div>
